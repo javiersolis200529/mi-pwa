@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a6fa5">
+  <meta name="description" content="Descubre las mejores prendas y tendencias en Moda & Estilo.">
+  <title>Moda & Estilo | Tienda de Ropa</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="marca">👗 Moda & Estilo</div>
+    <button id="btnNotificaciones" class="boton boton-claro" type="button">Activar notificaciones</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="etiqueta">TENDENCIAS & ESTILO</p>
+      <h1>Renueva tu estilo<br>cada día</h1>
+      <p>Explora nuestra colección exclusiva de ropa urbana, casual y formal.</p>
+      <a class="boton" href="#catalogo">Ver catálogo</a>
+    </section>
+
+    <section class="contenido" id="catalogo">
+      <div class="titulo-seccion">
+        <div>
+          <p class="etiqueta">NUESTRA COLECCIÓN</p>
+          <h2 style="margin: 0; font-size: clamp(1.5rem, 3vw, 2.1rem);">Prendas destacadas</h2>
+        </div>
+        <label class="busqueda">
+          <span class="solo-lectores">Buscar ropa</span>
+          <input id="buscarPrenda" type="search" placeholder="Buscar prenda...">
+        </label>
+      </div>
+
+      <div id="listaRopa" class="grid-ropa" aria-live="polite"></div>
+      <p id="mensajeVacio" class="mensaje-vacio" hidden>No encontramos prendas con ese nombre.</p>
+    </section>
+
+    <section class="aviso">
+      <span class="aviso-icono">✨</span>
+      <div>
+        <h2 style="margin: 0; font-size: clamp(1.5rem, 3vw, 2.1rem);">Calidad y comodidad a tu alcance</h2>
+        <p>Selecciona tus favoritas y renueva tu guardarropa hoy mismo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©️ <span id="anio"></span> Moda & Estilo · Diseñado para ti 👔</p>
+    <p id="estadoConexion" class="estado-conexion">Conectado</p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
